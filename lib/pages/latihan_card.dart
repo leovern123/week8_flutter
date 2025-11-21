@@ -85,7 +85,17 @@ class LatihanCard extends StatelessWidget {
                           ),
                           child: Row(
                             children: [
-                              
+                              Container(
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle
+                                ),
+
+                              child: CircleAvatar(
+                                radius: 60,
+                                backgroundImage: AssetImage("assets/images/poto.png"),
+                              ),
+
+                              ),
                             ],
                           )
                         ),
