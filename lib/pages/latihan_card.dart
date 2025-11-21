@@ -83,7 +83,11 @@ class LatihanCard extends StatelessWidget {
                               colors: [Colors.blue, Colors.red],
                             ),
                           ),
-                          child: Text("Text", style: TextStyle(fontSize: 20.0),),
+                          child: Row(
+                            children: [
+                              
+                            ],
+                          )
                         ),
                       )
               ],
