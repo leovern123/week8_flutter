@@ -65,14 +65,27 @@ class LatihanCard extends StatelessWidget {
                       Text('Harga emas Antam hari ini kembali mengalami penurunan usai naik cukup tinggi selama dua hari terakhir. Harga emas Antam 24 karat turun hingga Rp 16.000 per gram menjadi Rp 2.348.000 per gram  Berdasarkan situs Logam Mulia Antam, Jumat (21/11/2025)',
                         style: TextStyle(fontSize: 15,color: Colors.grey[700],height: 1.5),
                         textAlign: TextAlign.justify,),
-                      const Text('baca selengkapnya->',style: TextStyle(fontSize: 15, color: Colors.blueAccent),textAlign: TextAlign.left,),
-                        
+                      const Text('baca selengkapnya->',style: TextStyle(fontSize: 15, color: Colors.blueAccent),textAlign: TextAlign.left,), 
                     ],
                   ),
                   ),
-
-                )
-                
+                ),
+                SizedBox(height: 10),
+                      Card(
+                        elevation: 8,
+                        shadowColor: Colors.red,
+                        clipBehavior: Clip.antiAlias,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              begin:  Alignment.topRight,
+                              end: Alignment.bottomLeft,
+                              colors: [Colors.blue, Colors.red],
+                            ),
+                          ),
+                          child: Text("Text", style: TextStyle(fontSize: 20.0),),
+                        ),
+                      )
               ],
             ),
             
